@@ -193,9 +193,10 @@ em{
 .iconfiltre{
     background-color: #DEEBFF;
     color: #0065FC;
-    width: 35px;
-    height: 35px;
-    border-radius: 17px;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+	padding: 5px 10px 0px 5px;
 }
 
 #info{
@@ -236,6 +237,7 @@ em{
     flex-wrap: wrap;
     justify-content: space-around;
     margin-bottom: -3em;
+	margin-left: 2em;
 }
 
 .CartesMars{
@@ -243,7 +245,7 @@ em{
     box-shadow: 1em 1em 1em #e6e6e6;
     width: 27%;
     height: 40%;
-    margin: 1em;
+    margin: 0.5em;
     padding: 0.5em;
     border-radius: 1em;
 }
@@ -548,8 +550,14 @@ nav h3{
 	height: 77%;
 }
 
+footer{
+	margin-top: 5em;
+	padding-top: 1em;
+}
+
 .propos {
 	margin: 1em 0em 0em 1em;
+}
 }
 
 /* Media Quiries telephone avec W < 767px */
@@ -578,9 +586,8 @@ nav h3{
 	#Logon {
 		grid-row-start: 1;
 		grid-row-end: 2;
-		grid-column-start: 3;
-		grid-column-end: 4;
-		text-align: right;
+		grid-column-start: 2;
+		grid-column-end: 3;
 		font-size: 1.3em;
 		padding-right: 1em;
 		}
@@ -624,7 +631,7 @@ nav h3{
 	border: solid 0.1em #f2f2f2;
 	padding: 0.5em 0em 0.5em 0.5em;
 	width: 65%;
-}
+	}
 
 	#search {
 		display: none;
@@ -646,6 +653,11 @@ nav h3{
 		margin-left: 1em;
 		margin-bottom: 1em;
 		align-content: space-around;
+	}
+
+	.partfiltre{
+		margin-top: 1em;
+		padding: 0.5em;
 	}
 
 	#Hebergements {
@@ -682,11 +694,12 @@ nav h3{
 		flex-direction: column;
 		flex-wrap: nowrap;
 		align-items: center;
-		height: 90%
+		height: 90%;
 	}
 
 	#TitreMars {
 		height: 10%;
+		padding-bottom: 5px;
 	}
 
 	.CartesMars {
@@ -716,17 +729,17 @@ nav h3{
 		width: 80%;
 	}
 
-	#footer {
+	footer {
 	display: flex;
     flex-wrap: wrap;
 	flex-direction: column;
 	align-items: flex-start;
-	margin: 0em;
-
+	margin-top: 5em;
 	}
 
 	.bottom {
-	margin: 1em 0em 0em 0.5em;
+	margin: 1em 0em 0em 2em;
+
 }
 
 	.PartBottom {
@@ -844,4 +857,5 @@ nav h3{
 
 .bottom {
 	margin: 1em 0em 0em 1em;
+}
 }
