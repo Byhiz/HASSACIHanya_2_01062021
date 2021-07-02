@@ -194,7 +194,7 @@ em{
     background-color: #DEEBFF;
     color: #0065FC;
     width: 20px;
-    height: 20px;
+    height: 27px;
     border-radius: 20px;
 	padding: 5px 10px 0px 5px;
 }
@@ -236,7 +236,7 @@ em{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-bottom: -3em;
+    margin-bottom: -0.2em;
 	margin-left: 2em;
 }
 
@@ -434,7 +434,7 @@ nav h3{
     text-decoration: none;
 }
 
-/*Media Queries Ecran PC avec 1024px < W */
+/*Media Queries Ecran PC 1024px < W */
 
 @media screen and (min-width: 1024px) {
 	#IconSearch {
@@ -442,22 +442,24 @@ nav h3{
 	}
 }
 
-/* Media Queries Tablette avec 768px < W < 1024px */
+/* Media Queries Tablette 768px < W < 1024px */
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
 
-	#search {
-		display: none;
+	#recherche{
+		margin-top: 2em;
 	}
 
 	#filtres {
+		display: flex;
 		flex-direction: column;
 		align-items: start;
-		margin-top: -2em;
+		margin-top: 0em;
 	}
 
-	#ContainerFiltres {
-		margin-left: 0em;
+	#ContFiltres {
+		margin-left: 5em;
+		margin-top: -3em;
 	}
 
 	#Hebergements {
@@ -466,10 +468,15 @@ nav h3{
 		height: 900px;
 	}
 
+	#TitreMars{
+		margin-top: 2em;
+		margin-bottom: 1em;
+	}
+
 	#populaires {
-		width: 100%;
+		width: 98%;
 		height: 30%;
-		margin-left: 0em;
+		margin: 2%;
 	}
 
 	#TitrePop {
@@ -479,88 +486,103 @@ nav h3{
 
 	#ContPopulaire {
 		flex-direction: row;
-		height: 80%;
+		height: 600px;
 		width: 100%;
 	}
 
-	.BoxElementsPop {
+	.CartesPop {
 		height: 80%;
 		width: 27%;
 		margin: 0em;
 	}
 
-	#HebergMarseille {
+	#ContMarsHeb{
+		width: 90%;
+		height: 600px;
+	}
+
+	#MarsHeb {
 		width: 100%;
 		height: 70%;
 		background-color: white;
 	}
 
+	#plus{
+		margin-top: 1%;
+	}
+
 	#ContActivites {
 	grid-template-columns: 30% 30% 30% ;
 	grid-template-rows: 50% 50%;
-	grid-column-gap: 1em;
-	margin-left: 1em;
+	grid-column-gap: 2em;
 	height: 600px;
-	width: 100%;
+	width: 90%;
+	margin-left: 3em;
 	}
 
-	.BoxAct:nth-child(1) {
+	.CartesAct:nth-child(1) {
 	grid-row-start: 1;
 	grid-row-end: 2;
 	grid-column-start: 1;
 	grid-column-end: 2;
 }
 
-.BoxAct:nth-child(2) {
+	.CartesAct:nth-child(2) {
 	grid-row-start: 1;
 	grid-row-end: 2;
 	grid-column-start: 2;
 	grid-column-end: 3;	
 }
 
-.BoxAct:nth-child(3) {
+	.CartesAct:nth-child(3) {
 	grid-row-start: 1;
 	grid-row-end: 2;
 	grid-column-start: 3;
 	grid-column-end: 4;	
 }
 
-.BoxAct:nth-child(4) {
+	.CartesAct:nth-child(4) {
 	grid-row-start: 2;
 	grid-row-end: 3;
 	grid-column-start: 1;
 	grid-column-end: 2;	
 }
 
-.BoxAct:nth-child(5) {
+	.CartesAct:nth-child(5) {
 	grid-row-start: 2;
 	grid-row-end: 3;
 	grid-column-start: 2;
 	grid-column-end: 3;	
 }
 
-.BoxAct:nth-child(6) {
+	.CartesAct:nth-child(6) {
 	grid-row-start: 2;
 	grid-row-end: 3;
 	grid-column-start: 3;
 	grid-column-end: 4;	
 }
 
-.imagesAct {
+.imgAct {
 	height: 77%;
 }
 
 footer{
 	margin-top: 5em;
-	padding-top: 1em;
+	padding-top: 0.2em;
+	padding-bottom: 0em;
 }
 
-.propos {
-	margin: 1em 0em 0em 1em;
+.bottom {
+	width: 20%;
+	margin-left: 1%;
+}
+
+.bottom h3{
+	margin-bottom: -1.5em;
 }
 }
 
-/* Media Quiries telephone avec W < 767px */
+/* Media Queries telephone < 767px */
 
 @media screen and (max-width: 767px) {
 
@@ -655,11 +677,6 @@ footer{
 		align-content: space-around;
 	}
 
-	.partfiltre{
-		margin-top: 1em;
-		padding: 0.5em;
-	}
-
 	#Hebergements {
         display: flex;
 		flex-direction: column-reverse;
@@ -695,11 +712,12 @@ footer{
 		flex-wrap: nowrap;
 		align-items: center;
 		height: 90%;
+		margin-bottom: 1em;
+		
 	}
 
 	#TitreMars {
 		height: 10%;
-		padding-bottom: 5px;
 	}
 
 	.CartesMars {
@@ -745,117 +763,4 @@ footer{
 	.PartBottom {
 		margin-top: -1em;
 	}
-}
-
-/* Modification Pour Tablette avec 768px < W < 1024px */
-
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-
-	#search {
-		display: none;
-	}
-
-	#filtres {
-		flex-direction: column;
-		align-items: start;
-		margin-top: -2em;
-	}
-
-	#ContFiltres {
-		margin-left: 0em;
-	}
-
-	#Hebergements {
-		flex-direction: column-reverse;
-		justify-content: start;
-		height: 900px;
-	}
-
-	#populaires {
-		width: 100%;
-		height: 30%;
-		margin-left: 0em;
-	}
-
-	#TitrePop {
-		height: 20%;
-		width: 90%;
-	}
-
-	#ContPopulaire {
-		flex-direction: row;
-		height: 80%;
-		width: 100%;
-	}
-
-	.CartesPop {
-		height: 80%;
-		width: 27%;
-		margin: 0em;
-	}
-
-	#MarsHeb {
-		width: 100%;
-		height: 70%;
-		background-color: white;
-	}
-
-	#ContActivites {
-	grid-template-columns: 30% 30% 30% ;
-	grid-template-rows: 50% 50%;
-	grid-column-gap: 1em;
-	margin-left: 1em;
-	height: 600px;
-	width: 100%;
-	}
-
-.CartesAct:nth-child(1) {
-	grid-row-start: 1;
-	grid-row-end: 2;
-	grid-column-start: 1;
-	grid-column-end: 2;
-}
-
-.CartesAct:nth-child(2) {
-	grid-row-start: 1;
-	grid-row-end: 2;
-	grid-column-start: 2;
-	grid-column-end: 3;	
-}
-
-.CartesAct:nth-child(3) {
-	grid-row-start: 1;
-	grid-row-end: 2;
-	grid-column-start: 3;
-	grid-column-end: 4;	
-}
-
-.CartesAct:nth-child(4) {
-	grid-row-start: 2;
-	grid-row-end: 3;
-	grid-column-start: 1;
-	grid-column-end: 2;	
-}
-
-.CartesAct:nth-child(5) {
-	grid-row-start: 2;
-	grid-row-end: 3;
-	grid-column-start: 2;
-	grid-column-end: 3;	
-}
-
-.CartesAct:nth-child(6) {
-	grid-row-start: 2;
-	grid-row-end: 3;
-	grid-column-start: 3;
-	grid-column-end: 4;	
-}
-
-.imgAct {
-	height: 77%;
-}
-
-.bottom {
-	margin: 1em 0em 0em 1em;
-}
 }
