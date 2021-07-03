@@ -4,7 +4,7 @@
 		font-family: "Raleway" ;
 		src: url('Font/Raleway-VariableFont_wght.ttf') format('truetype');
 		    font-weight: normal;
-    		font-style: normal;
+    		font-style: italic;
 	}
 
  body{
@@ -314,7 +314,7 @@ em{
 
 .PartPop{
     height: 100%;
-    width: 45%;
+    width: 60%;
 }
 
 .imagesPop{
@@ -326,9 +326,10 @@ em{
 
 .LegendePop{
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-wrap: wrap;
     margin: 0.4em;
+	width: 40%;
+
 }
 
 /*Activités*/
@@ -446,6 +447,10 @@ nav h3{
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
 
+	#IconSearch{
+		display: none;
+	}
+
 	#recherche{
 		margin-top: 2em;
 	}
@@ -494,6 +499,15 @@ nav h3{
 		height: 80%;
 		width: 27%;
 		margin: 0em;
+	}
+
+	.PartPop{
+		width: 55%;
+	}
+
+	.LegendePop{
+		width: 45%;
+		font-size: 85%;
 	}
 
 	#ContMarsHeb{
@@ -653,6 +667,16 @@ footer{
 	border: solid 0.1em #f2f2f2;
 	padding: 0.5em 0em 0.5em 0.5em;
 	width: 65%;
+	}
+
+	#IconSearch{
+		background-color: #0065FC;
+		color: white;
+		border: none;
+		border-radius: 1em 1em 1em 1em;
+		height: 50px;
+		width: 50px;
+		font-size: 100%;
 	}
 
 	#search {
